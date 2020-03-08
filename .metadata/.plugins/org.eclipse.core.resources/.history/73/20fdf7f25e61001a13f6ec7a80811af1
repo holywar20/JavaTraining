@@ -1,0 +1,8 @@
+package bwinter.training;
+
+import java.util.ArrayList;
+
+public class ArrayListLearn {
+	private int[] myNumbers;
+	private ArrayList<String> aList = new ArrayList<String>();
+}

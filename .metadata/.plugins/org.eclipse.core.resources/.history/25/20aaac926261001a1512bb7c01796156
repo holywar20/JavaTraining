@@ -1,0 +1,14 @@
+
+package com.bwinter;
+
+import bwinter.training.ArrayListLearn;
+
+
+
+public class Scratch {
+	/* This is just a container class. Import one of the training libraries to then do cool things with the subclasses */
+	
+	public static void main( String args[] ) {
+		ArrayListLearn arrayList = new ArrayListLearn();
+	}	
+}

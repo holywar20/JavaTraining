@@ -1,0 +1,77 @@
+package bwinter.training;
+
+class Movie{
+	private String name;
+	
+	public Movie( String name ) {
+		this.name = name;
+	}
+	
+	public String plot() {
+		return "No plot here";
+	}
+	
+	public String getName() {
+		return name;
+	}
+}
+
+class Jaws extends Movie{
+	public Jaws() {
+		super("Jaws");
+	}
+	
+	@Override
+	public String plot() {
+		return "A shark eats people";
+	}
+}
+
+class MazeRunner extends Movie{
+	public MazeRunner() {
+		super("MazeRunner");
+	}
+	
+	@Override
+	public String plot() {
+		return "running in a maze";
+	}
+	
+}
+
+class StarWars extends Movie{
+	public StarWars() {
+		super("Starwars");
+	}
+	
+	
+	@Override
+	public String plot() {
+		return "Empire is evil";
+	}
+	
+}
+
+class IndepedenceDay extends Movie{
+	public IndepedenceDay() {
+		super("Independence Day");
+	}
+	
+	@Override
+	public String plot() {
+		return "Independence Day";
+	}
+}
+
+class Forgettable extends Movie{
+	public Forgettable() {
+		super("Forgettable");
+	}
+	
+	
+	@Override
+	public String plot() {
+		return "Forgetabble!";
+	}
+	
+}

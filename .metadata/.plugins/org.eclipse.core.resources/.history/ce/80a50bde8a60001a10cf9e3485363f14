@@ -1,0 +1,10 @@
+
+import java.utils.Scanner;
+
+public class Scratch {
+	
+	public static Scanner scanner = new Scanner( system.in );
+	public static void main( String args[] ) {
+
+	}
+}

@@ -1,0 +1,11 @@
+package bwinter.training;
+
+import java.util.ArrayList;
+
+public class ArrayListLearn {
+	private ArrayList<String> aList = new ArrayList<String>();
+	
+	public void addGroceryItem( String item ) {
+		aList.add(item);
+	}
+}
