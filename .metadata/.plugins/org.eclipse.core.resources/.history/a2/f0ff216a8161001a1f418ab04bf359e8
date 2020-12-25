@@ -1,0 +1,9 @@
+package bwinter.training;
+
+public class LinkedListLearn {
+
+	
+	public void runLearning(){
+		
+	}
+}

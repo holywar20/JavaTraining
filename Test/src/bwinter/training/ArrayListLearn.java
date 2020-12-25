@@ -2,11 +2,22 @@ package bwinter.training;
 
 import java.util.ArrayList;
 
+
+/* Array List
+ * 
+ * Note - Array lists can't be of a primitive type.
+ * 
+ */
+
 public class ArrayListLearn {
 	private ArrayList<String> aList = new ArrayList<String>();
 	
 	public void addGroceryItem( String item ) {
 		aList.add(item);
+	}
+	
+	public ArrayList<String> getGroceryList(){
+		return aList;
 	}
 	
 	public void printGroceryList() {
@@ -25,6 +36,7 @@ public class ArrayListLearn {
 	public void removeGroceryItem( int pos ) {
 		String theItem = aList.get(pos);
 		aList.remove(pos);
+		System.out.println( theItem );
 	}
 
 	public String findItem( String searchItem ) {

@@ -1,0 +1,57 @@
+package bwinter.training;
+
+import java.util.LinkedList;
+import java.util.Iterator;
+import java.util.ListIterator;
+
+public class LinkedListLearn {
+
+	private LinkedList<String> places = new LinkedList<String>();
+	
+	public void runLearning(){
+		this.places.add("Destiny");
+		this.places.add("Perth");
+		this.places.add("Canberra");
+		
+		printList( places );
+		places.add( 1 , "AliceSprings" ); // Add an element.
+		printList( places );
+		places.remove( 4 );  // Remove an element
+		printList( places );
+		
+		// Advantages of a linked list
+		
+		
+	}
+	
+	public static void printList(LinkedList<String> linkedList ) {
+		Iterator<String> i = linkedList.iterator();
+		
+		while( i.hasNext() ) {
+			System.out.println("Now Visiting " + i.next() );
+		}
+		System.out.println("----------------------");		
+	}
+	
+	private static boolean addInOrder( LinkedList<String> list, String newCity) {
+		ListIterator<String> myIterator = list.listIterator();
+		
+		while( myIterator.hasNext() ) {
+			int comparision = myIterator.next().compareTo(newCity); // .next() moves forward one entry.
+			
+			if( comparision == 0 ) {
+				System.out.println( newCity + " City already eixsts " );
+			} else if( comparision > 0  ) {
+				myIterator.previous();
+				myIterator.add( newCity );
+				
+				
+			} else {
+				
+			}
+		}
+		
+		
+		return true;
+	}
+}

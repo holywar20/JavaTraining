@@ -1,0 +1,29 @@
+package bwinter.training;
+
+import java.util.ArrayList;
+
+
+public class AutoBoxingLearn {
+	int[] intArray = new int[] {0 ,1 , 2, 3, 4, 5 ,6, 7, 8, 9 };
+	
+	private ArrayList<Integer> intArrayList = new ArrayList<Integer>();
+	
+	// This will cause an Error.
+	// private ArrayList<int> invalidIntArrayList = new ArrayList<int>();
+	
+	public void testAutoBoxingLearn(){
+		
+		System.out.println( "Autoboxing - taking a value of int, and turning it to Int" );
+		for( int i = 0; i < 10; i++ ) {
+			intArrayList.add( Integer.valueOf( i ) );
+		}
+		System.out.println( intArrayList );
+		
+		System.out.println("Unautoboxing, taking an Integer and getting from it an int ");
+		for ( int i = 0; i < 10; i++ ) {
+			System.out.println( intArrayList.get(i).intValue( );
+		}
+		System.out.println( intArray );
+		
+	}
+}

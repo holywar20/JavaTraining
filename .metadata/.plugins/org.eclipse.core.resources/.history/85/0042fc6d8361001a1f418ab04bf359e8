@@ -1,0 +1,14 @@
+package bwinter.training;
+
+import java.util.LinkedList;
+
+public class LinkedListLearn {
+
+	private LinkedList<String> places = new LinkedList<String>();
+	
+	public void runLearning(){
+		this.placesToVisit.add("Destiny");
+		this.placesToVisit.add("Perth");
+		
+	}
+}

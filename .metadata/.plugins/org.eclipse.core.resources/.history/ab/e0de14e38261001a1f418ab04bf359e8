@@ -1,0 +1,18 @@
+package bwinter.training;
+
+import java.util.ArrayList;
+
+public class LinkedListLearn {
+
+	private ArrayList<Integer> intList = new ArrayList<Integer>();
+	
+	public void runLearning(){
+		intList.add(1);
+		intList.add(2);
+		intList.add(6);
+		System.out.println( intList );
+		
+		intList.add(0, 200);
+		System.out.println( intList );	
+	}
+}

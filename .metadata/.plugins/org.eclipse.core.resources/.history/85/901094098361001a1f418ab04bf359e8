@@ -1,0 +1,12 @@
+package bwinter.training;
+
+import java.util.ArrayList;
+
+public class LinkedListLearn {
+
+	private ArrayList<Integer> intList = new ArrayList<Integer>();
+	
+	public void runLearning(){
+		
+	}
+}
